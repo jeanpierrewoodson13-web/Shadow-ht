@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowHT - Free Fire Top Up Premium</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <i class="fas fa-fire"></i>
+      <span>ShadowHT</span>
+    </div>
+    <div class="nav-menu">
+      <a href="#home" class="nav-link active">Accueil</a>
+      <a href="#shop" class="nav-link">Boutique</a>
+      <a href="#about" class="nav-link">À propos</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link contact-link">Contact</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">🔥 Bienvenue sur <span class="gradient-text">ShadowHT</span></h1>
+    <p class="hero-subtitle">Recharge Free Fire Ultra-Rapide & 100% Sécurisée</p>
+    <div class="hero-buttons">
+      <a href="#shop" class="btn btn-primary btn-large">
+        <i class="fas fa-shopping-cart"></i> Acheter Maintenant
+      </a>
+      <a href="#faq" class="btn btn-secondary btn-large">
+        <i class="fas fa-circle-info"></i> En Savoir Plus
+      </a>
+    </div>
+  </div>
+  <div class="hero-animation">
+    <div class="floating-card"></div>
+    <div class="floating-card delay"></div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title">Pourquoi Choisir <span class="gradient-text">ShadowHT</span> ?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Livraison Instantanée</h3>
+        <p>Recevez vos diamants en moins de 5 minutes après confirmation du paiement</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>100% Sécurisé</h3>
+        <p>Paiements vérifiés via NatCash - Vos données sont totalement protégées</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Support 24/7</h3>
+        <p>Équipe réactive sur WhatsApp - Réponse en moins de 5 minutes</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✅</div>
+        <h3>Tarifs Compétitifs</h3>
+        <p>Les meilleurs prix du marché garantis pour tous nos produits</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎁</div>
+        <h3>Bonus Exclusifs</h3>
+        <p>Réductions progressives et cadeaux pour nos clients fidèles</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⭐</div>
+        <h3>Avis Vérifiés</h3>
+        <p>Rejoignez plus de 10,000 clients satisfaits</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP SECTION -->
+<section id="shop" class="shop">
+  <div class="container">
+    <h2 class="section-title">Notre <span class="gradient-text">Boutique</span></h2>
+    <p class="section-subtitle">Sélectionnez le forfait qui vous convient</p>
+
+    <!-- FILTER TABS -->
+    <div class="shop-filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="diamonds">Diamants</button>
+      <button class="filter-btn" data-filter="subscription">Abonnements</button>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div class="products-grid">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card" data-filter="diamonds">
+        <div class="product-badge">Populaire</div>
+        <div class="product-image">
+          <i class="fas fa-gem"></i>
+        </div>
+        <h3 class="product-title">110 Diamants</h3>
+        <p class="product-description">Pack de démarrage parfait</p>
+        <div class="product-price">
+          <span class="price-currency">160</span>
+          <span class="price-unit">Goud</span>
+        </div>
+        <div class="product-features">
+          <p>✓ Livraison instantanée</p>
+          <p>✓ Aucun frais supplémentaire</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCheckout('110 Diamants', '160 Goud')">
+          <i class="fas fa-cart-plus"></i> Acheter Maintenant
+        </button>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card" data-filter="diamonds">
+        <div class="product-image">
+          <i class="fas fa-gem"></i>
+        </div>
+        <h3 class="product-title">520 Diamants</h3>
+        <p class="product-description">Pack économique recommandé</p>
+        <div class="product-price">
+          <span class="price-currency">750</span>
+          <span class="price-unit">Goud</span>
+        </div>
+        <div class="product-features">
+          <p>✓ -5% de réduction</p>
+          <p>✓ Bonus 20 diamants offerts</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCheckout('520 Diamants', '750 Goud')">
+          <i class="fas fa-cart-plus"></i> Acheter Maintenant
+        </button>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card" data-filter="diamonds">
+        <div class="product-badge best">Meilleure Offre</div>
+        <div class="product-image premium">
+          <i class="fas fa-gem"></i>
+        </div>
+        <h3 class="product-title">1080 Diamants</h3>
+        <p class="product-description">Pack premium haute valeur</p>
+        <div class="product-price">
+          <span class="price-currency">1500</span>
+          <span class="price-unit">Goud</span>
+        </div>
+        <div class="product-features">
+          <p>✓ -10% de réduction</p>
+          <p>✓ Bonus 150 diamants offerts</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCheckout('1080 Diamants', '1500 Goud')">
+          <i class="fas fa-cart-plus"></i> Acheter Maintenant
+        </button>
+      </div>
+
+      <!-- SUBSCRIPTION 1 -->
+      <div class="product-card" data-filter="subscription">
+        <div class="product-image">
+          <i class="fas fa-calendar"></i>
+        </div>
+        <h3 class="product-title">Abonnement Semaine</h3>
+        <p class="product-description">Bénéfices 7 jours</p>
+        <div class="product-price">
+          <span class="price-currency">400</span>
+          <span class="price-unit">Goud</span>
+        </div>
+        <div class="product-features">
+          <p>✓ 7 jours d'accès</p>
+          <p>✓ Bénéfices illimités</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCheckout('Abonnement Semaine', '400 Goud')">
+          <i class="fas fa-cart-plus"></i> S'abonner
+        </button>
+      </div>
+
+      <!-- SUBSCRIPTION 2 -->
+      <div class="product-card" data-filter="subscription">
+        <div class="product-badge">Populaire</div>
+        <div class="product-image">
+          <i class="fas fa-calendar"></i>
+        </div>
+        <h3 class="product-title">Abonnement Mois</h3>
+        <p class="product-description">Bénéfices 30 jours</p>
+        <div class="product-price">
+          <span class="price-currency">1800</span>
+          <span class="price-unit">Goud</span>
+        </div>
+        <div class="product-features">
+          <p>✓ 30 jours d'accès</p>
+          <p>✓ Bénéfices illimités</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCheckout('Abonnement Mois', '1800 Goud')">
+          <i class="fas fa-cart-plus"></i> S'abonner
+        </button>
+      </div>
+
+      <!-- SUBSCRIPTION 3 -->
+      <div class="product-card" data-filter="subscription">
+        <div class="product-badge best">Meilleure Affaire</div>
+        <div class="product-image premium">
+          <i class="fas fa-calendar"></i>
+        </div>
+        <h3 class="product-title">Abonnement 3 Mois</h3>
+        <p class="product-description">Bénéfices 90 jours</p>
+        <div class="product-price">
+          <span class="price-currency">5000</span>
+          <span class="price-unit">Goud</span>
+        </div>
+        <div class="product-features">
+          <p>✓ 90 jours d'accès</p>
+          <p>✓ -15% économies</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCheckout('Abonnement 3 Mois', '5000 Goud')">
+          <i class="fas fa-cart-plus"></i> S'abonner
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">À Propos de <span class="gradient-text">ShadowHT</span></h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Qui Sommes-Nous ?</h3>
+        <p>ShadowHT est une plateforme fiable et innovante spécialisée dans la recharge rapide et sécurisée de Free Fire. Depuis notre création, nous servons des milliers de clients satisfaits en garantissant une qualité de service sans égal.</p>
+        
+        <h3>Notre Mission</h3>
+        <p>Offrir à tous les joueurs de Free Fire une expérience d'achat simple, rapide et sécurisée avec les meilleurs tarifs du marché.</p>
+
+        <h3>Nos Valeurs</h3>
+        <ul class="values-list">
+          <li><i class="fas fa-check"></i> Transparence absolue</li>
+          <li><i class="fas fa-check"></i> Qualité de service garantie</li>
+          <li><i class="fas fa-check"></i> Sécurité maximale</li>
+          <li><i class="fas fa-check"></i> Satisfaction client 100%</li>
+        </ul>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Clients Satisfaits</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Transactions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4.9/5</div>
+          <div class="stat-label">Note Moyenne</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Support Actif</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="section-title">Questions <span class="gradient-text">Fréquentes</span></h2>
+    <div class="faq-content">
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Combien de temps pour recevoir ma commande ?</h3>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Votre commande est traitée en moins de 5 minutes après la confirmation du paiement. Les diamants sont livrés directement à votre compte Free Fire.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Est-ce que c'est vraiment sécurisé ?</h3>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Oui, absolument ! Nous utilisons NatCash pour tous les paiements, un système de paiement hautement sécurisé et reconnu. Nous n'accédons jamais à votre mot de passe Free Fire.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Puis-je obtenir un remboursement ?</h3>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Si vous rencontrez un problème, contactez notre support immédiatement. Nous remboursons intégralement toute transaction non satisfaisante.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Mes données personnelles sont-elles protégées ?</h3>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Vos données personnelles sont cryptées et protégées par les meilleures normes de sécurité. Nous ne les partagerons jamais avec des tiers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Comment puis-je contacter le support ?</h3>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Vous pouvez nous contacter via WhatsApp à +505 9624 6319. Notre équipe est disponible 24/7 pour vous aider.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Y a-t-il des frais supplémentaires ?</h3>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Non, aucun frais supplémentaire ! Le prix affiché est le prix final. C'est ce que vous payez, rien de plus.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">Ce que Disent Nos <span class="gradient-text">Clients</span></h2>
+    <div class="testimonials-grid">
+      
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">"ShadowHT est incroyable ! J'ai reçu mes diamants en 2 minutes. Vraiment recommandé !"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">J</div>
+          <div>
+            <p class="author-name">Jean Claude</p>
+            <p class="author-role">Client Vérifié</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">"Meilleur site pour acheter des diamants. Support super réactif sur WhatsApp."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <p class="author-name">Marie</p>
+            <p class="author-role">Client Vérifié</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">"J'utilise ShadowHT depuis 6 mois. Jamais eu de problème, très fiable !"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">C</div>
+          <div>
+            <p class="author-name">Carlos</p>
+            <p class="author-role">Client Vérifié</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Nous <span class="gradient-text">Contacter</span></h2>
+    <div class="contact-content">
+      
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Téléphone / WhatsApp</h3>
+          <p>+505 9624 6319</p>
+          <a href="https://wa.me/50956246319" class="contact-link" target="_blank">
+            Ouvrir WhatsApp <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Horaires</h3>
+          <p>Support 24/7</p>
+          <p class="text-small">Réponse en moins de 5 minutes</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-shield"></i>
+          </div>
+          <h3>Sécurité</h3>
+          <p>NatCash Sécurisé</p>
+          <p class="text-small">Paiements vérifiés et protégés</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Votre message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-large">
+          <i class="fas fa-paper-plane"></i> Envoyer le Message
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><i class="fas fa-fire"></i> ShadowHT</h3>
+        <p>Votre plateforme de confiance pour l'achat de diamants Free Fire.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#shop">Boutique</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>WhatsApp: +505 9624 6319</p>
+        <p>Support: 24/7 Actif</p>
+      </div>
+      <div class="footer-section">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 ShadowHT. Tous droits réservés. | <a href="#">Politique de Confidentialité</a> | <a href="#">Conditions d'Utilisation</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Validation de Commande</h2>
+    <div class="modal-body">
+      <div class="checkout-summary">
+        <p><strong>Produit:</strong> <span id="productName"></span></p>
+        <p><strong>Prix:</strong> <span id="productPrice"></span></p>
+      </div>
+      <form id="checkoutForm">
+        <div class="form-group">
+          <label>ID Free Fire *</label>
+          <input type="text" id="freeFireId" placeholder="Entrez votre ID Free Fire" required>
+        </div>
+        <div class="form-group">
+          <label>ID Transaction NatCash *</label>
+          <input type="text" id="natcashId" placeholder="Entrez votre ID NatCash" required>
+        </div>
+        <div class="form-group">
+          <label>Email de Confirmation *</label>
+          <input type="email" id="email" placeholder="Entrez votre email" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-large">
+          <i class="fas fa-check"></i> Confirmer la Commande
+        </button>
+        <p class="checkout-note">Après confirmation, vous serez redirigé vers WhatsApp pour finaliser l'achat.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
